@@ -11,6 +11,27 @@ async function main() {
     console.dir(usersWithPosts, { depth: null })
   }
 
+  // CREATE NEW USER
+  // const user = await prisma.user.create({
+  //   data: {
+  //     name: 'Alice',
+  //     email: '[email protected]',
+  //   },
+  // })
+
+  // CREATE NEW USER/POST
+  // const user = await prisma.user.create({
+  //   data: {
+  //     name: 'Bob',
+  //     email: '[email protected]',
+  //     posts: {
+  //       create: {
+  //         title: 'Hello World',
+  //       },
+  //     },
+  //   },
+  // })
+
 main()
   .then(async () => {
     await prisma.$disconnect()
